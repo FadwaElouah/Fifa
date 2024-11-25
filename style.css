@@ -102,7 +102,7 @@ border-radius: 6px;
      border: 1px solid white;
 }
 .img-terrain{
-    border: 1px solid red ;
+   
     width: 100%;
 }
 
@@ -135,6 +135,7 @@ border-radius: 6px;
     padding-top: 30px;
     color: white;
     background-color:#2d2828 ;
+    padding-bottom: 30px;
 
 }
 .footer-two h3{
