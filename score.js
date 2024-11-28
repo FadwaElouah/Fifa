@@ -82,13 +82,11 @@ let gridOne = document.querySelectorAll('.grid-one')
 
 taskAjouter.addEventListener('click',(e)=>{
 
-    icon_pluss.addEventListener('click',function(){
-            icon_pluss.classList.remove('fa-regular', 'fa-square-plus', 'plus');
-
-           })
+  
   
     e.preventDefault()
-//  if(taskName.value != '' && taskNastionality .value != '' && taskRating.value != '' && taskFormation.value != '' && taskDrib.value != '' && taskShooting.value != '' && taskPassing.value != '' && taskDefen.value != '' && taskPhysical.value != '' && taskUrl.value != '' ){
+      if(taskName .value != '' && taskNastionality.value != '' && taskRating.value != '' && taskPosition.value != '' && taskPace.value != '' && taskShooting.value != '' && taskPassing.value != '' && taskDrib.value != '' && taskDefen.value != '' && taskPhysical.value != '' && taskUrl.value != '' && taskUp.value != ''){
+
     gridOne[0].innerHTML=`
     <div class="fut-player-card">
 
@@ -103,14 +101,14 @@ taskAjouter.addEventListener('click',(e)=>{
                   <span>${taskPosition.value}</span>
                </div>
                <div class="player-nation">
-                   <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> 
+                    <img src="${taskNastionality.value}" alt="Nationalité" draggable="false"/>
                </div>
                <div class="player-club">
                   <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/>
                </div>
             </div>
             <div class="player-picture">
-               <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/>
+                <img src="${taskUrl.value}" alt="Image du joueur" draggable="false"/>
                <div class="player-extra">
                   <span></span>
                   <span></span>
@@ -127,30 +125,30 @@ taskAjouter.addEventListener('click',(e)=>{
                <div class="player-features">
                   <div class="player-features-col">
                      <span>
-                        <div class="player-feature-value"></div>
-                        <div class="player-feature-title"></div>
+                        <div class="player-feature-value">${taskPace.value}</div>
+                        <div class="player-feature-title">PAC</div>
                      </span>
                      <span>
-                        <div class="player-feature-value"></div>
-                        <div class="player-feature-title"></div>
+                        <div class="player-feature-value">${taskShooting.value}</div>
+                        <div class="player-feature-title">SHO</div>
                      </span>
                      <span>
-                        <div class="player-feature-value"></div>
-                        <div class="player-feature-title"></div>
+                        <div class="player-feature-value">${taskPassing.value}</div>
+                        <div class="player-feature-title">PAS</div>
                      </span>
                   </div>
                   <div class="player-features-col">
                      <span>
-                        <div class="player-feature-value"></div>
-                        <div class="player-feature-title"></div>
+                        <div class="player-feature-value">${taskDrib.value}</div>
+                        <div class="player-feature-title">DRI</div>
                      </span>
                      <span>
-                        <div class="player-feature-value"></div>
-                        <div class="player-feature-title"></div>
+                        <div class="player-feature-value">${taskDefen.value}</div>
+                        <div class="player-feature-title">DEF</div>
                      </span>
                      <span>
-                        <div class="player-feature-value"></div>
-                        <div class="player-feature-title"></div>
+                        <div class="player-feature-value">${taskPhysical.value}</div>
+                        <div class="player-feature-title">PHY</div>
                      </span>
                   </div>
                </div>
@@ -159,8 +157,26 @@ taskAjouter.addEventListener('click',(e)=>{
          
       </div>
 `
-//  }
+let plus = document.querySelector('.plus');
+
+    plus.style.display = 'none'; 
 
 
-})
+    taskRating.value = '';
+    taskPosition.value = '';
+    taskNastionality.value = '';
+    taskUrl.value = '';
+    taskName.value = '';
+    taskPace.value = '';
+    taskShooting.value = '';
+    taskDrib.value = '';
+    taskDefen.value = '';
+    taskPhysical.value = '';
+    taskPassing.value = '';
+
+
+
+}
+}
+)
 
