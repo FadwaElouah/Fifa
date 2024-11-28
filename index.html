@@ -31,7 +31,7 @@
          
              <select class="select">
                 <option value="">4-3-3</option>
-                <option value="">4-3-2</option>
+                <option value="">4-4-2</option>
              </select>
        </div>
       </div>
@@ -53,21 +53,23 @@
       <div class="container">
         <div class="terrain" >
          <!-- <img src="/images/terrain_1.png" alt="" width="80% !important" > -->
-       
-        <!-- ///////////////////////////// -->
+<!-- ///////////////////////////// -->
+
+<section class="section-cards">
  <div class="grid">
       <!-- ++++++ -->
    <div class="grid-one">  
       <div class="fut-player-card">
 
-         <i class="fa-regular fa-square-plus plus"></i>
+         <i class="fa-regular fa-square-plus plus" id="icon_pluss"></i>
               <div class="player-card-top">
                  <div class="player-master-info">
                     <div class="player-rating">
                        <span></span>
                     </div>
+                    
                     <div class="player-position">
-                       <span>RW</span>
+                       <span></span>
                     </div>
                     <div class="player-nation">
                        <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
@@ -140,7 +142,7 @@
                         <span></span>
                      </div>
                      <div class="player-position">
-                        <span>RW</span>
+                        <span></span>
                      </div>
                      <div class="player-nation">
                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
@@ -211,7 +213,7 @@
  <div class="grid-grid2">
       <!-- ++++++ -->
    <div class="grid-one position">  
-      <div class="fut-player-card">
+      <div class="fut-player-card ">
          <i class="fa-regular fa-square-plus plus plus-one"></i>
               <div class="player-card-top">
                  <div class="player-master-info">
@@ -498,6 +500,7 @@
             
            
 </div>
+</section>
  <div class="grid-grid3">
       <!-- ++++++ -->
    <div class="grid-one position">  
@@ -830,16 +833,16 @@
                      </div>
                      <div class="player-features-col">
                         <span>
-                           <div class="player-feature-value"></div>
+                           <div class="player-feature-value">99</div>
                            <div class="player-feature-title">DRI</div>
                         </span>
                         <span>
                            <div class="player-feature-value">35</div>
-                           <div class="player-feature-title"></div>
+                           <div class="player-feature-title">DEF</div>
                         </span>
                         <span>
                            <div class="player-feature-value">68</div>
-                           <div class="player-feature-title"></div>
+                           <div class="player-feature-title">PHY</div>
                         </span>
                      </div>
                   </div>
@@ -874,18 +877,23 @@
 
 <section>
    <div class="formulaire">
-      <input type="text" placeholder="  Full Name...." class="name">
-      <input type="text" placeholder="  nationality" class="name">
-      <input type="text" placeholder="  rating" class="name">
-      <input type="text" placeholder="  pace" class="name">
-      <input type="text" placeholder="  shooting" class="name">
-      <input type="text" placeholder="  passing" class="name">
-      <input type="text" placeholder="  dribbling" class="name">
-      <input type="text" placeholder="  defending" class="name" >
-      <input type="text" placeholder="  physical" class="name">
+      <input type="text" placeholder="  Full Name...." class="name" id="taskName">
+      <input type="text" placeholder="  Nationality" class="name" id="taskNastionality">
+      <input type="text" placeholder="  rating" class="name" id="taskRating">
+      <input type="text" placeholder="  Position" class="name" id="taskPosition">
+      <input type="text" placeholder="  pace" class="name" id="taskPace">
+      <input type="text" placeholder="  shooting" class="name" id="taskShooting">
+      <input type="text" placeholder="  passing" class="name" id="taskPassing">
+      <input type="text" placeholder="  dribbling" class="name" id="taskDrib">
+      <input type="text" placeholder="  defending" class="name" id="taskDefen">
+      <input type="text" placeholder="  physical" class="name" id="taskPhysical">
+      <input type="url" placeholder="Enter Url imag" class="name" id="taskUrl">
+      <input type="file" name="fileUpload" id="file" placeholder="hello" class="name" itemid="taskUp">
+      
       <div>
-         <button>Ajouet</button>
-         <button>Supprimer</button>
+         <button id="taskAjouter">Ajouter</button>
+         <button id="taskModifier">Modifier</button>
+         <button id="taskSupprimer">Supprimer</button>
       </div>
    </div>
 </section>

@@ -146,11 +146,7 @@ border-radius: 6px;
     grid-template-columns: repeat(1fr);
 }
 
-.grid-one{
 
-    /* border: 1px solid red; */
-  
- }
  .plus{
     font-size: 3.4rem;
     margin-top: -9px;
@@ -177,9 +173,10 @@ border-radius: 6px;
 grid-template-rows: repeat(6,1fr); */
       
     }
-
 /* cards */
-
+.section-cards{
+    /* border: 3px solid red; */
+}
 
 .fut-player-card {
 	position: relative;
@@ -195,10 +192,41 @@ grid-template-rows: repeat(6,1fr); */
 	-o-transition: 200ms ease-in;
 	transition: 200ms ease-in;
     margin: auto;
-  
-    
+    /* border: 2px solid red; */
+   
     
 }
+/* ==============pos */
+ .pos-one{
+    margin-left: 20.5rem;
+   
+}
+.pos-two{
+    margin-left: 12rem;
+    margin-top: 1rem;
+    
+}
+.pos-three{
+    margin-left: 13rem;
+    margin-top: -13rem;
+   
+   
+}
+.pos-four{
+    margin-left: -7rem;
+    
+}
+.pos-five{
+    margin-top: 3rem;
+    margin-left: -4rem;
+   
+}
+.pos-six{
+    margin-top: 3rem;
+    margin-left: -5rem;
+    
+} 
+/*end pos =========== */
 
 .fut-player-card .player-card-top {
 	position: relative;
@@ -368,7 +396,7 @@ grid-template-rows: repeat(6,1fr); */
 .formulaire{
  width: 30%;
  background-color: rgb(27, 22, 22);
- height: 500px;
+ height: 650px;
  padding-top: 25px;
  display: none;
  position: absolute;
@@ -377,12 +405,13 @@ grid-template-rows: repeat(6,1fr); */
 margin: 0 auto;
 
 }
+
 .formulaire button{
     padding: 10px 20px;
     background-color: #2F9B75;
     border: none;
     border-radius: 5px;
-    margin-left: 4rem;
+    margin-left: 1.5rem;
     margin-top: 2rem;
 }
 .formulaire button:hover{
@@ -402,7 +431,9 @@ margin: 0 auto;
     color: #282222;
     padding-left: 5px;
 }
-
+.hidden{
+    display:none;
+}
 
 
 /* footer */
