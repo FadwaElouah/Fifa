@@ -10,8 +10,8 @@ header{
     color: white;
     background-color:black;
     padding-top: 40px;
-    position:fixed ;
-   z-index: 1;
+    /* position:fixed ; */
+   z-index: 3;
   
 }
 .menu{
@@ -82,25 +82,21 @@ border-radius: 6px;
 .section1{
 
     width: 100%;
-    height: 900px;
+    height: 1000px;
    background: url(/images/img-background.webp);
    background-repeat: no-repeat;
    background-size: cover;
+
   
 }
 .section1-div{
  
   width: 100%;
-  height: 900px;
-  background-color: #474444a2;
+  
 
  
 }
-.container{
-    width: 100%;
-    display: flex;
-    padding-top: 7%;
-}
+
 h2{
  font-weight: bold;
  color: white;
@@ -125,15 +121,244 @@ h2{
     border-radius: 10px;
     font-size: 15px;
 }
-.terrain{
-    width: 75%;
-    border: 2px solid red;
+.grid{
+   
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(2,1fr);
+    margin:0 20%;
+   
+
+}
+.grid-grid2{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid-grid3{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.grid-grid4{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+
+.grid-one{
+
+    /* border: 1px solid red; */
+  
+ }
+ .plus{
+    font-size: 3rem;
+    /* margin-top: -1rem; */
+    margin-left:3rem ;
+    color: #7f671e;
+ }
+ .plus:hover{
+    color: #7f671e7f;
+ }
+.position{
+    position: relative;
+    top: -3rem;
+}
+    .terrain{
+      
+ /* background-color: #1e1e1e; */
+ height: 900px;
+ /* display: grid;   */
+ width: 100%;
+ /* grid-template-columns: repeat(5,1fr);
+grid-template-rows: repeat(6,1fr); */
+      
     }
 
+/* cards */
 
+
+.fut-player-card {
+	position: relative;
+	width: 142px;
+  height: 71px;
+	background-image: url(https://selimdoyranli.com/cdn/fut-player-card/img/card_bg.png);
+	background-position: center center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 3.8rem 0;
+	z-index: 2;
+	-webkit-transition: 200ms ease-in;
+	-o-transition: 200ms ease-in;
+	transition: 200ms ease-in;
+    margin: auto;
+  
+    
+    
+}
+
+.fut-player-card .player-card-top {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	color: #e9cc74;
+	padding: 0 1.5rem;
+ 
+}
+
+.fut-player-card .player-card-top .player-master-info {
+	position: absolute;
+	line-height: 2.2rem;
+	font-weight: 300;
+	padding: 1.5rem 0;
+	text-transform: uppercase;
+}
+
+.fut-player-card .player-card-top .player-master-info .player-rating {
+	font-size: 12px;
+    margin-top: -42px;
+}
+
+.fut-player-card .player-card-top .player-master-info .player-position {
+	font-size: 12px;
+    margin-top: -20px;
+}
+
+.fut-player-card .player-card-top .player-master-info .player-nation {
+	display: block;
+	width: 1rem;
+	height: 25px;
+	margin: -11px 0;
+}
+
+.fut-player-card .player-card-top .player-master-info .player-nation img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.fut-player-card .player-card-top .player-master-info .player-club {
+	display: block;
+	width: 1rem;
+	height: 40px;
+}
+
+.fut-player-card .player-card-top .player-master-info .player-club img {
+	width: 100%;
+	height: 47%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.fut-player-card .player-card-top .player-picture {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.fut-player-card .player-card-top .player-picture img {
+    width: 63%;
+    height: 23%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    position: relative;
+    right: -2.5rem;
+    bottom: 4px;
+}
+
+.fut-player-card .player-card-top .player-picture .player-extra {
+	position: absolute;
+  right: -11px;
+  bottom: 90px;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  height: 5rem;
+  padding: 0 1.5rem;
+  text-align: right;
+  background: none;
+}
+
+.fut-player-card .player-card-top .player-picture .player-extra span {
+	margin-left: 0.6rem;
+	text-shadow: 2px 2px #333;
+}
+
+.fut-player-card .player-card-bottom {
+	position: relative;
+}
+
+.fut-player-card .player-card-bottom .player-info {
+	display: block;
+	padding: 0.3rem 0;
+	color: #e9cc74;
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	position: relative;
+	z-index: 2;
+   
+}
+
+.fut-player-card .player-card-bottom .player-info .player-name {
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 10px;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgba(233, 204, 116, 0.1);
+	padding-bottom: 0.3rem;
+	overflow: hidden;
+    margin-top: -10rem;
+}
+
+.fut-player-card .player-card-bottom .player-info .player-name span {
+	display: block;
+	text-shadow: 2px 2px #111;
+}
+
+.fut-player-card .player-card-bottom .player-info .player-features {
+	margin: 0.5rem auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+    
+}
+
+.fut-player-card .player-card-bottom .player-info .player-features .player-features-col {
+	border-right: 2px solid rgba(233, 204, 116, 0.1);
+	padding: 0 0.3rem;
+}
+
+.fut-player-card .player-card-bottom .player-info .player-features .player-features-col span {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.fut-player-card .player-card-bottom .player-info .player-features .player-features-col span .player-feature-value {
+	margin-right: 0.3rem;   
+	font-weight: 700;
+    font-size: 10px;
+}
+
+.fut-player-card .player-card-bottom .player-info .player-features .player-features-col span .player-feature-title {
+	font-weight: 300;
+}
+
+.fut-player-card .player-card-bottom .player-info .player-features .player-features-col:last-child {
+	border: 0;
+}
 
 
 
@@ -206,4 +431,7 @@ margin: 10px 0;
     text-align: center;
     color:#5c5959;
     padding-top: 10px;
+}
+.card{
+    display: flex;
 }
