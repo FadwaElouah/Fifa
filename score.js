@@ -46,8 +46,12 @@ plus.forEach((item,index)=>{
 })
 
 format.addEventListener('click',()=>{
- formation.style.display = 'block'
-
+  if( formation.style.display === 'none'){
+    formation.style.display = 'block'
+  }
+  else {
+    formation.style.display = 'none'
+  }
     
 })
 
