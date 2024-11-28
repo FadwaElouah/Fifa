@@ -1,7 +1,7 @@
 let plus = document.querySelectorAll(".plus")
 let formulaire = document.querySelector(".formulaire")
 let format = document.getElementById('format')
-let formation = document.querySelector('formation')
+let formation = document.querySelector('.formation')
 
 plus.forEach((item,index)=>{
     item.addEventListener('click',function(){
