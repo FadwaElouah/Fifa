@@ -2,14 +2,14 @@ let plus = document.querySelectorAll(".plus")
 let formulaire = document.querySelector(".formulaire")
 let format = document.getElementById('format')
 let formation = document.querySelector('.formation')
-let icon_pluss=document.getElementById('icon_pluss');
+
 plus.forEach((item,index)=>{
     item.addEventListener('click',function(){
         
         if(index == 0){
             formulaire.style.display = 'block'
          
-        
+         
         }
         else if (index == 1){
             formulaire.style.display = 'block'
@@ -45,7 +45,7 @@ plus.forEach((item,index)=>{
             formulaire.style.display = 'block'
         }
     })
-})
+}) 
 
 format.addEventListener('click',()=>{
   if( formation.style.display === 'none'){
@@ -85,9 +85,10 @@ taskAjouter.addEventListener('click',(e)=>{
   
   
     e.preventDefault()
-      if(taskName .value != '' && taskNastionality.value != '' && taskRating.value != '' && taskPosition.value != '' && taskPace.value != '' && taskShooting.value != '' && taskPassing.value != '' && taskDrib.value != '' && taskDefen.value != '' && taskPhysical.value != '' && taskUrl.value != '' && taskUp.value != ''){
 
-    gridOne[0].innerHTML=`
+      if(taskName .value != '' && taskNastionality.value != '' && taskRating.value != '' && taskPosition.value != '' && taskPace.value != '' && taskShooting.value != '' && taskPassing.value != '' && taskDrib.value != '' && taskDefen.value != '' && taskPhysical.value != '' && taskUrl.value != '' ){
+
+    gridOne[0].innerHTML =`
     <div class="fut-player-card">
 
     <i class="fa-regular fa-square-plus plus"></i>
@@ -104,7 +105,7 @@ taskAjouter.addEventListener('click',(e)=>{
                     <img src="${taskNastionality.value}" alt="Nationalité" draggable="false"/>
                </div>
                <div class="player-club">
-                  <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/>
+                  <img src="${taskUrl.value}" alt="Barcelona" draggable="false"/>
                </div>
             </div>
             <div class="player-picture">
@@ -154,12 +155,13 @@ taskAjouter.addEventListener('click',(e)=>{
                </div>
             </div>
          </div>
-         
+
       </div>
 `
 let plus = document.querySelector('.plus');
 
-    plus.style.display = 'none'; 
+plus.style.display = 'none'; 
+formulaire.style.display = 'none'
 
 
     taskRating.value = '';
@@ -173,10 +175,25 @@ let plus = document.querySelector('.plus');
     taskDefen.value = '';
     taskPhysical.value = '';
     taskPassing.value = '';
-
-
+    
 
 }
 }
 )
+
+
+let formationThree = document.getElementById('formation-three')
+let formationTwo = document.getElementById('formation-two')
+let cardCard = document.querySelector('.card-card')
+let sectionCard = document.querySelector('.section-cards')
+
+
+formationThree.addEventListener('click',()=>{
+   sectionCard .style.visibility='hidden';
+   cardCard.style.display='block'
+})
+formationTwo.addEventListener('click',()=>{
+    cardCard .style.display='none';
+    sectionCard.style.visibility='visible'
+})
 

@@ -174,9 +174,7 @@ grid-template-rows: repeat(6,1fr); */
       
     }
 /* cards */
-.section-cards{
-    /* border: 3px solid red; */
-}
+
 
 .fut-player-card {
 	position: relative;
@@ -197,6 +195,20 @@ grid-template-rows: repeat(6,1fr); */
     
 }
 /* ==============pos */
+.section-cards{
+   
+  /* visibility: hidden; */
+    
+  
+   
+}
+.card-card{
+
+    display: none;
+  
+    position: absolute;
+   top: 90px;
+}
  .pos-one{
     margin-left: 20.5rem;
    

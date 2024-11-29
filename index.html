@@ -30,8 +30,8 @@
          <div class="formation">
          
              <select class="select">
-                <option value="">4-3-3</option>
-                <option value="">4-4-2</option>
+                <option value="" id="formation-three">4-3-3</option>
+                <option value="" id="formation-two">4-4-2</option>
              </select>
        </div>
       </div>
@@ -56,451 +56,898 @@
 <!-- ///////////////////////////// -->
 
 <section class="section-cards">
- <div class="grid">
-      <!-- ++++++ -->
-   <div class="grid-one">  
-      <div class="fut-player-card">
-
-         <i class="fa-regular fa-square-plus plus" id="plus_icon" ></i>
-              <div class="player-card-top">
-                 <div class="player-master-info">
-                    <div class="player-rating">
-                       <span></span>
-                    </div>
-                    
-                    <div class="player-position">
-                       <span></span>
-                    </div>
-                    <div class="player-nation">
-                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
-                    </div>
-                    <div class="player-club">
-                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
-                    </div>
-                 </div>
-                 <div class="player-picture">
-                    <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
-                    <div class="player-extra">
-                       <span></span>
-                       <span></span>
-                    </div>
-                 </div>
-              </div>
-              <div class="player-card-bottom">
-                 <div class="player-info">
-                    <!-- Player Name-->
-                    <div class="player-name">
-                       <span></span>
-                    </div>
-                    <!-- Player Features-->
-                    <div class="player-features">
-                       <div class="player-features-col">
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                       </div>
-                       <div class="player-features-col">
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-              
-           </div>
-
-         
-      
-    </div>
-
-   <div class="grid-one">  
-      
-            <div class="fut-player-card">
-               <i class="fa-regular fa-square-plus plus "></i>
-               <div class="player-card-top">
-                  <div class="player-master-info">
-                     <div class="player-rating">
-                        <span></span>
-                     </div>
-                     <div class="player-position">
-                        <span></span>
-                     </div>
-                     <div class="player-nation">
-                        <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
-                     </div>
-                     <div class="player-club">
-                        <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
-                     </div>
-                  </div>
-                  <div class="player-picture">
-                     <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
-                     <div class="player-extra">
-                        <span></span>
-                        <span></span>
-                     </div>
-                  </div>
-               </div>
-               <div class="player-card-bottom">
-                  <div class="player-info">
-                     <!-- Player Name-->
-                     <div class="player-name">
-                        <span></span>
-                     </div>
-                     <!-- Player Features-->
-                     <div class="player-features">
-                        <div class="player-features-col">
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                        </div>
-                        <div class="player-features-col">
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
+   <div class="grid">
+        <!-- ++++++ -->
+     <div class="grid-one">  
+        <div class="fut-player-card">
+  
+           <i class="fa-regular fa-square-plus plus" id="plus_icon" ></i>
+                <div class="player-card-top">
+                   <div class="player-master-info">
+                      <div class="player-rating">
+                         <span></span>
+                      </div>
+                      
+                      <div class="player-position">
+                         <span></span>
+                      </div>
+                      <div class="player-nation">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                      </div>
+                      <div class="player-club">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                      </div>
+                   </div>
+                   <div class="player-picture">
+                      <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                      <div class="player-extra">
+                         <span></span>
+                         <span></span>
+                      </div>
+                   </div>
+                </div>
+                <div class="player-card-bottom">
+                   <div class="player-info">
+                      <!-- Player Name-->
+                      <div class="player-name">
+                         <span></span>
+                      </div>
+                      <!-- Player Features-->
+                      <div class="player-features">
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                
+             </div>
+  
            
-    </div>
-    <!-- ////////////////////         -->
-
-    
-
-    
-            
-           
-</div>
- <div class="grid-grid2">
-      <!-- ++++++ -->
-   <div class="grid-one position">  
-      <div class="fut-player-card ">
-         <i class="fa-regular fa-square-plus plus plus-one"></i>
-              <div class="player-card-top">
-                 <div class="player-master-info">
-                    <div class="player-rating">
-                       <span></span>
-                    </div>
-                    <div class="player-position">
-                       <span></span>
-                    </div>
-                    <div class="player-nation">
-                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
-                    </div>
-                    <div class="player-club">
-                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
-                    </div>
-                 </div>
-                 <div class="player-picture">
-                    <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
-                    <div class="player-extra">
-                       <span></span>
-                       <span></span>
-                    </div>
-                 </div>
-              </div>
-              <div class="player-card-bottom">
-                 <div class="player-info">
-                    <!-- Player Name-->
-                    <div class="player-name">
-                       <span></span>
-                    </div>
-                    <!-- Player Features-->
-                    <div class="player-features">
-                       <div class="player-features-col">
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
+        
+      </div>
+  
+     <div class="grid-one">  
+        
+              <div class="fut-player-card">
+                 <i class="fa-regular fa-square-plus plus "></i>
+                 <div class="player-card-top">
+                    <div class="player-master-info">
+                       <div class="player-rating">
+                          <span></span>
                        </div>
-                       <div class="player-features-col">
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
+                       <div class="player-position">
+                          <span></span>
+                       </div>
+                       <div class="player-nation">
+                          <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                       </div>
+                       <div class="player-club">
+                          <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                       </div>
+                    </div>
+                    <div class="player-picture">
+                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                       <div class="player-extra">
+                          <span></span>
+                          <span></span>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="player-card-bottom">
+                    <div class="player-info">
+                       <!-- Player Name-->
+                       <div class="player-name">
+                          <span></span>
+                       </div>
+                       <!-- Player Features-->
+                       <div class="player-features">
+                          <div class="player-features-col">
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                          </div>
+                          <div class="player-features-col">
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                          </div>
                        </div>
                     </div>
                  </div>
               </div>
-              
-           </div>
+  
+             
+      </div>
+      <!-- ////////////////////         -->
+  
       
-   </div>
-
-   <div class="grid-one">  
-      <div class="fut-player-card">
-         <i class="fa-regular fa-square-plus plus plus-one"></i>
-              <div class="player-card-top">
-                 <div class="player-master-info">
-                    <div class="player-rating">
-                       <span></span>
-                    </div>
-                    <div class="player-position">
-                       <span></span>
-                    </div>
-                    <div class="player-nation">
-                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
-                    </div>
-                    <div class="player-club">
-                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
-                    </div>
-                 </div>
-                 <div class="player-picture">
-                    <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
-                    <div class="player-extra">
-                       <span></span>
-                       <span></span>
-                    </div>
-                 </div>
-              </div>
-              <div class="player-card-bottom">
-                 <div class="player-info">
-                    <!-- Player Name-->
-                    <div class="player-name">
-                       <span></span>
-                    </div>
-                    <!-- Player Features-->
-                    <div class="player-features">
-                       <div class="player-features-col">
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                       </div>
-                       <div class="player-features-col">
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-              
-           </div>
+  
       
-   </div>
-
-   <div class="grid-one">  
-      <div class="fut-player-card">
-         <i class="fa-regular fa-square-plus plus plus-one"></i>
-              <div class="player-card-top">
-                 <div class="player-master-info">
-                    <div class="player-rating">
-                       <span></span>
-                    </div>
-                    <div class="player-position">
-                       <span></span>
-                    </div>
-                    <div class="player-nation">
-                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
-                    </div>
-                    <div class="player-club">
-                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
-                    </div>
-                 </div>
-                 <div class="player-picture">
-                    <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
-                    <div class="player-extra">
-                       <span></span>
-                       <span></span>
-                    </div>
-                 </div>
-              </div>
-              <div class="player-card-bottom">
-                 <div class="player-info">
-                    <!-- Player Name-->
-                    <div class="player-name">
-                       <span></span>
-                    </div>
-                    <!-- Player Features-->
-                    <div class="player-features">
-                       <div class="player-features-col">
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                       </div>
-                       <div class="player-features-col">
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                          <span>
-                             <div class="player-feature-value"></div>
-                             <div class="player-feature-title"></div>
-                          </span>
-                       </div>
-                    </div>
-                 </div>
-              </div>
               
-           </div>
+             
+  </div>
+   <div class="grid-grid2">
+        <!-- ++++++ -->
+     <div class="grid-one position">  
+        <div class="fut-player-card ">
+           <i class="fa-regular fa-square-plus plus plus-one"></i>
+                <div class="player-card-top">
+                   <div class="player-master-info">
+                      <div class="player-rating">
+                         <span></span>
+                      </div>
+                      <div class="player-position">
+                         <span></span>
+                      </div>
+                      <div class="player-nation">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                      </div>
+                      <div class="player-club">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                      </div>
+                   </div>
+                   <div class="player-picture">
+                      <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                      <div class="player-extra">
+                         <span></span>
+                         <span></span>
+                      </div>
+                   </div>
+                </div>
+                <div class="player-card-bottom">
+                   <div class="player-info">
+                      <!-- Player Name-->
+                      <div class="player-name">
+                         <span></span>
+                      </div>
+                      <!-- Player Features-->
+                      <div class="player-features">
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                
+             </div>
+        
+     </div>
+  
+     <div class="grid-one">  
+        <div class="fut-player-card">
+           <i class="fa-regular fa-square-plus plus plus-one"></i>
+                <div class="player-card-top">
+                   <div class="player-master-info">
+                      <div class="player-rating">
+                         <span></span>
+                      </div>
+                      <div class="player-position">
+                         <span></span>
+                      </div>
+                      <div class="player-nation">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                      </div>
+                      <div class="player-club">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                      </div>
+                   </div>
+                   <div class="player-picture">
+                      <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                      <div class="player-extra">
+                         <span></span>
+                         <span></span>
+                      </div>
+                   </div>
+                </div>
+                <div class="player-card-bottom">
+                   <div class="player-info">
+                      <!-- Player Name-->
+                      <div class="player-name">
+                         <span></span>
+                      </div>
+                      <!-- Player Features-->
+                      <div class="player-features">
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                
+             </div>
+        
+     </div>
+  
+     <div class="grid-one">  
+        <div class="fut-player-card">
+           <i class="fa-regular fa-square-plus plus plus-one"></i>
+                <div class="player-card-top">
+                   <div class="player-master-info">
+                      <div class="player-rating">
+                         <span></span>
+                      </div>
+                      <div class="player-position">
+                         <span></span>
+                      </div>
+                      <div class="player-nation">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                      </div>
+                      <div class="player-club">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                      </div>
+                   </div>
+                   <div class="player-picture">
+                      <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                      <div class="player-extra">
+                         <span></span>
+                         <span></span>
+                      </div>
+                   </div>
+                </div>
+                <div class="player-card-bottom">
+                   <div class="player-info">
+                      <!-- Player Name-->
+                      <div class="player-name">
+                         <span></span>
+                      </div>
+                      <!-- Player Features-->
+                      <div class="player-features">
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                
+             </div>
+        
+     </div>
+  
+     <div class="grid-one position">  
+              <div class="fut-player-card">
+                 <i class="fa-regular fa-square-plus plus plus-one"></i>
+                 <div class="player-card-top">
+                    <div class="player-master-info">
+                       <div class="player-rating">
+                          <span></span>
+                       </div>
+                       <div class="player-position">
+                          <span></span>
+                       </div>
+                       <div class="player-nation">
+                          <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                       </div>
+                       <div class="player-club">
+                          <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                       </div>
+                    </div>
+                    <div class="player-picture">
+                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                       <div class="player-extra">
+                          <span></span>
+                          <span></span>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="player-card-bottom">
+                    <div class="player-info">
+                       <!-- Player Name-->
+                       <div class="player-name">
+                          <span></span>
+                       </div>
+                       <!-- Player Features-->
+                       <div class="player-features">
+                          <div class="player-features-col">
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                          </div>
+                          <div class="player-features-col">
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+  
+             
+      </div>
+     
+      <!-- ////////////////////         -->
+  
       
-   </div>
-
-   <div class="grid-one position">  
-            <div class="fut-player-card">
-               <i class="fa-regular fa-square-plus plus plus-one"></i>
-               <div class="player-card-top">
-                  <div class="player-master-info">
-                     <div class="player-rating">
-                        <span></span>
-                     </div>
-                     <div class="player-position">
-                        <span></span>
-                     </div>
-                     <div class="player-nation">
-                        <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
-                     </div>
-                     <div class="player-club">
-                        <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
-                     </div>
-                  </div>
-                  <div class="player-picture">
-                     <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
-                     <div class="player-extra">
-                        <span></span>
-                        <span></span>
-                     </div>
-                  </div>
-               </div>
-               <div class="player-card-bottom">
-                  <div class="player-info">
-                     <!-- Player Name-->
-                     <div class="player-name">
-                        <span></span>
-                     </div>
-                     <!-- Player Features-->
-                     <div class="player-features">
-                        <div class="player-features-col">
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                        </div>
-                        <div class="player-features-col">
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                           <span>
-                              <div class="player-feature-value"></div>
-                              <div class="player-feature-title"></div>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
+  
+      
+              
+             
+  </div>
+  </section>
+  
+<section class="section-cards card-card">
+   <div class="grid">
+        <!-- ++++++ -->
+     <div class="grid-one">  
+        <div class="fut-player-card pos-one">
+  
+           <i class="fa-regular fa-square-plus plus" id="plus_icon" ></i>
+                <div class="player-card-top">
+                   <div class="player-master-info">
+                      <div class="player-rating">
+                         <span></span>
+                      </div>
+                      
+                      <div class="player-position">
+                         <span></span>
+                      </div>
+                      <div class="player-nation">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                      </div>
+                      <div class="player-club">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                      </div>
+                   </div>
+                   <div class="player-picture">
+                      <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                      <div class="player-extra">
+                         <span></span>
+                         <span></span>
+                      </div>
+                   </div>
+                </div>
+                <div class="player-card-bottom">
+                   <div class="player-info">
+                      <!-- Player Name-->
+                      <div class="player-name">
+                         <span></span>
+                      </div>
+                      <!-- Player Features-->
+                      <div class="player-features">
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                
+             </div>
+  
            
-    </div>
-   
-    <!-- ////////////////////         -->
-
-    
-
-    
-            
-           
-</div>
-</section>
+        
+      </div>
+  
+     <div class="grid-one">  
+        
+              <div class="fut-player-card pos-two">
+                 <i class="fa-regular fa-square-plus plus "></i>
+                 <div class="player-card-top">
+                    <div class="player-master-info">
+                       <div class="player-rating">
+                          <span></span>
+                       </div>
+                       <div class="player-position">
+                          <span></span>
+                       </div>
+                       <div class="player-nation">
+                          <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                       </div>
+                       <div class="player-club">
+                          <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                       </div>
+                    </div>
+                    <div class="player-picture">
+                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                       <div class="player-extra">
+                          <span></span>
+                          <span></span>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="player-card-bottom">
+                    <div class="player-info">
+                       <!-- Player Name-->
+                       <div class="player-name">
+                          <span></span>
+                       </div>
+                       <!-- Player Features-->
+                       <div class="player-features">
+                          <div class="player-features-col">
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                          </div>
+                          <div class="player-features-col">
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+  
+             
+      </div>
+      <!-- ////////////////////         -->
+  
+      
+  
+      
+              
+             
+  </div>
+   <div class="grid-grid2">
+        <!-- ++++++ -->
+     <div class="grid-one position">  
+        <div class="fut-player-card pos-three">
+           <i class="fa-regular fa-square-plus plus plus-one"></i>
+                <div class="player-card-top">
+                   <div class="player-master-info">
+                      <div class="player-rating">
+                         <span></span>
+                      </div>
+                      <div class="player-position">
+                         <span></span>
+                      </div>
+                      <div class="player-nation">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                      </div>
+                      <div class="player-club">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                      </div>
+                   </div>
+                   <div class="player-picture">
+                      <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                      <div class="player-extra">
+                         <span></span>
+                         <span></span>
+                      </div>
+                   </div>
+                </div>
+                <div class="player-card-bottom">
+                   <div class="player-info">
+                      <!-- Player Name-->
+                      <div class="player-name">
+                         <span></span>
+                      </div>
+                      <!-- Player Features-->
+                      <div class="player-features">
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                
+             </div>
+        
+     </div>
+  
+     <div class="grid-one">  
+        <div class="fut-player-card pos-four">
+           <i class="fa-regular fa-square-plus plus plus-one"></i>
+                <div class="player-card-top">
+                   <div class="player-master-info">
+                      <div class="player-rating">
+                         <span></span>
+                      </div>
+                      <div class="player-position">
+                         <span></span>
+                      </div>
+                      <div class="player-nation">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                      </div>
+                      <div class="player-club">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                      </div>
+                   </div>
+                   <div class="player-picture">
+                      <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                      <div class="player-extra">
+                         <span></span>
+                         <span></span>
+                      </div>
+                   </div>
+                </div>
+                <div class="player-card-bottom">
+                   <div class="player-info">
+                      <!-- Player Name-->
+                      <div class="player-name">
+                         <span></span>
+                      </div>
+                      <!-- Player Features-->
+                      <div class="player-features">
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                
+             </div>
+        
+     </div>
+  
+     <div class="grid-one">  
+        <div class="fut-player-card pos-five">
+           <i class="fa-regular fa-square-plus plus plus-one"></i>
+                <div class="player-card-top">
+                   <div class="player-master-info">
+                      <div class="player-rating">
+                         <span></span>
+                      </div>
+                      <div class="player-position">
+                         <span></span>
+                      </div>
+                      <div class="player-nation">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                      </div>
+                      <div class="player-club">
+                         <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                      </div>
+                   </div>
+                   <div class="player-picture">
+                      <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                      <div class="player-extra">
+                         <span></span>
+                         <span></span>
+                      </div>
+                   </div>
+                </div>
+                <div class="player-card-bottom">
+                   <div class="player-info">
+                      <!-- Player Name-->
+                      <div class="player-name">
+                         <span></span>
+                      </div>
+                      <!-- Player Features-->
+                      <div class="player-features">
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                         <div class="player-features-col">
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                            <span>
+                               <div class="player-feature-value"></div>
+                               <div class="player-feature-title"></div>
+                            </span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                
+             </div>
+        
+     </div>
+  
+     <div class="grid-one position">  
+              <div class="fut-player-card pos-six">
+                 <i class="fa-regular fa-square-plus plus plus-one"></i>
+                 <div class="player-card-top">
+                    <div class="player-master-info">
+                       <div class="player-rating">
+                          <span></span>
+                       </div>
+                       <div class="player-position">
+                          <span></span>
+                       </div>
+                       <div class="player-nation">
+                          <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                       </div>
+                       <div class="player-club">
+                          <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                       </div>
+                    </div>
+                    <div class="player-picture">
+                       <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                       <div class="player-extra">
+                          <span></span>
+                          <span></span>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="player-card-bottom">
+                    <div class="player-info">
+                       <!-- Player Name-->
+                       <div class="player-name">
+                          <span></span>
+                       </div>
+                       <!-- Player Features-->
+                       <div class="player-features">
+                          <div class="player-features-col">
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                          </div>
+                          <div class="player-features-col">
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                             <span>
+                                <div class="player-feature-value"></div>
+                                <div class="player-feature-title"></div>
+                             </span>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+  
+             
+      </div>
+     
+      <!-- ////////////////////         -->
+  
+      
+  
+      
+              
+             
+  </div>
+  </section>
  <div class="grid-grid3">
       <!-- ++++++ -->
    <div class="grid-one position">  
@@ -888,7 +1335,7 @@
       <input type="text" placeholder="  defending" class="name" id="taskDefen">
       <input type="text" placeholder="  physical" class="name" id="taskPhysical">
       <input type="url" placeholder="Enter Url imag" class="name" id="taskUrl">
-      <input type="file" name="fileUpload" id="file" placeholder="hello" class="name" itemid="taskUp">
+      
       
       <div>
          <button id="taskAjouter">Ajouter</button>
