@@ -59,7 +59,7 @@
    <div class="grid">
         <!-- ++++++ -->
      <div class="grid-one">  
-        <div class="fut-player-card" id="">
+        <div class="fut-player-card" id="ST-gouch">
   
            <i class="fa-regular fa-square-plus plus" id="plus_icon" ></i>
                 <div class="player-card-top">
@@ -134,7 +134,7 @@
   
      <div class="grid-one">  
         
-              <div class="fut-player-card">
+              <div class="fut-player-card" id="ST-droit">
                  <i class="fa-regular fa-square-plus plus "></i>
                  <div class="player-card-top">
                     <div class="player-master-info">
@@ -213,7 +213,7 @@
    <div class="grid-grid2">
         <!-- ++++++ -->
      <div class="grid-one position">  
-        <div class="fut-player-card ">
+        <div class="fut-player-card " id="LM">
            <i class="fa-regular fa-square-plus plus plus-one"></i>
                 <div class="player-card-top">
                    <div class="player-master-info">
@@ -283,7 +283,7 @@
      </div>
   
      <div class="grid-one">  
-        <div class="fut-player-card">
+        <div class="fut-player-card" id="CM">
            <i class="fa-regular fa-square-plus plus plus-one"></i>
                 <div class="player-card-top">
                    <div class="player-master-info">
@@ -353,7 +353,7 @@
      </div>
   
      <div class="grid-one">  
-        <div class="fut-player-card">
+        <div class="fut-player-card" id="CM">
            <i class="fa-regular fa-square-plus plus plus-one"></i>
                 <div class="player-card-top">
                    <div class="player-master-info">
@@ -423,7 +423,7 @@
      </div>
   
      <div class="grid-one position">  
-              <div class="fut-player-card">
+              <div class="fut-player-card" id="RM">
                  <i class="fa-regular fa-square-plus plus plus-one"></i>
                  <div class="player-card-top">
                     <div class="player-master-info">
@@ -501,7 +501,7 @@
              
   </div>
   </section>
-  
+ <!-- =========invisible  -->
 <section class="section-cards card-card">
    <div class="grid">
         <!-- ++++++ -->
@@ -947,11 +947,13 @@
               
              
   </div>
-  </section>
+</section>
+<!-- ================ end invisible -->
+
  <div class="grid-grid3">
       <!-- ++++++ -->
    <div class="grid-one position">  
-      <div class="fut-player-card">
+      <div class="fut-player-card" id="LB">
          <i class="fa-regular fa-square-plus plus plus-one"></i>
               <div class="player-card-top">
                  <div class="player-master-info">
@@ -1021,7 +1023,7 @@
     </div>
 
    <div class="grid-one">  
-            <div class="fut-player-card">
+            <div class="fut-player-card" id="CB-gouch" onclick="addcard(this)">
                <i class="fa-regular fa-square-plus plus plus-one"></i>
                <div class="player-card-top">
                   <div class="player-master-info">
@@ -1090,7 +1092,7 @@
            
     </div>
    <div class="grid-one">  
-            <div class="fut-player-card">
+            <div class="fut-player-card" id="CB-droit">
                <i class="fa-regular fa-square-plus plus plus-one"></i>
                <div class="player-card-top">
                   <div class="player-master-info">
@@ -1159,7 +1161,7 @@
            
     </div>
    <div class="grid-one position">  
-            <div class="fut-player-card">
+            <div class="fut-player-card" id="RB">
                <i class="fa-regular fa-square-plus plus plus-one"></i>
                <div class="player-card-top">
                   <div class="player-master-info">
@@ -1232,7 +1234,7 @@
 
     <div class="grid-grid4">
       <div class="grid-one">  
-         <div class="fut-player-card">
+         <div class="fut-player-card" id="GK">
             <div class="player-card-top">
                <div class="player-master-info">
                   <div class="player-rating">
@@ -1322,29 +1324,253 @@
 </section>
 
 
-<section>
-   <div class="formulaire">
+<section id="modal">
+   
+   <form id="formulaire">
+      <h1>add new player</h1>
       <input type="text" placeholder="  Full Name...." class="name" id="taskName">
-      <input type="text" placeholder="  Nationality" class="name" id="taskNastionality">
-      <input type="text" placeholder="  rating" class="name" id="taskRating">
-      <input type="text" placeholder="  Position" class="name" id="taskPosition">
-      <input type="text" placeholder="  pace" class="name" id="taskPace">
-      <input type="text" placeholder="  shooting" class="name" id="taskShooting">
-      <input type="text" placeholder="  passing" class="name" id="taskPassing">
-      <input type="text" placeholder="  dribbling" class="name" id="taskDrib">
-      <input type="text" placeholder="  defending" class="name" id="taskDefen">
-      <input type="text" placeholder="  physical" class="name" id="taskPhysical">
       <input type="url" placeholder="Enter Url imag" class="name" id="taskUrl">
+      <input type="url" placeholder="  Nationality" class="name" id="taskNastionality">
+      <input type="url" placeholder="club" class="name" id="taskClub">
+      <input type="number" min="50" max="100" placeholder="  rating" class="name" id="taskRating">
+      <select class="name" id="taskPosition">
+         <option value="st">ST</option>
+         <option value="lm">LM</option>
+         <option value="cm">CM</option>
+         <option value="rm">RM</option>
+         <option value="lb">LB</option>
+         <option value="cb">CB</option>
+         <option value="rb">RB</option>
+         <option value="gk">GK</option>
+      </select>
+      <input type="number" min="50" max="100" placeholder="   pace" class="name" id="taskPace">
+      <input type="number" min="50" max="100" placeholder="  shooting" class="name" id="taskShooting">
+      <input type="number" min="50" max="100" placeholder="  passing" class="name" id="taskPassing">
+      <input type="number" min="50" max="100" placeholder="  dribbling" class="name" id="taskDrib">
+      <input type="number" min="50" max="100" placeholder="  defending" class="name" id="taskDefen">
+      <input type="number" min="50" max="100" placeholder="  physical" class="name" id="taskPhysical">
+      
       
       
       <div>
-         <button id="taskAjouter">Ajouter</button>
+         <button id="taskAjouter" type="submit">Ajouter</button>
          <button id="taskModifier">Modifier</button>
          <button id="taskSupprimer">Supprimer</button>
       </div>
-   </div>
+   </form>
 </section>
-    
+   <!-- =============disposition  -->
+    <section class="disposition-section ">
+      <div class="grid-one" id="dispo-div">  
+         <div class="fut-player-card" >
+            <i class="fa-regular fa-square-plus plus plus-one"></i>
+            <div class="player-card-top">
+               <div class="player-master-info">
+                  <div class="player-rating">
+                     <span></span>
+                  </div>
+                  <div class="player-position">
+                     <span></span>
+                  </div>
+                  <div class="player-nation">
+                     <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                  </div>
+                  <div class="player-club">
+                     <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                  </div>
+               </div>
+               <div class="player-picture">
+                  <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                  <div class="player-extra">
+                     <span></span>
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="player-card-bottom">
+               <div class="player-info">
+                  <!-- Player Name-->
+                  <div class="player-name">
+                     <span></span>
+                  </div>
+                  <!-- Player Features-->
+                  <div class="player-features">
+                     <div class="player-features-col">
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                     </div>
+                     <div class="player-features-col">
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+        
+ </div>
+
+ <div class="grid-one">  
+   <div class="fut-player-card" id="CB">
+      <i class="fa-regular fa-square-plus plus plus-one"></i>
+      <div class="player-card-top">
+         <div class="player-master-info">
+            <div class="player-rating">
+               <span></span>
+            </div>
+            <div class="player-position">
+               <span></span>
+            </div>
+            <div class="player-nation">
+               <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+            </div>
+            <div class="player-club">
+               <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+            </div>
+         </div>
+         <div class="player-picture">
+            <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+            <div class="player-extra">
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+      <div class="player-card-bottom">
+         <div class="player-info">
+            <!-- Player Name-->
+            <div class="player-name">
+               <span></span>
+            </div>
+            <!-- Player Features-->
+            <div class="player-features">
+               <div class="player-features-col">
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+               </div>
+               <div class="player-features-col">
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+  
+</div>
+
+<div class="grid-one">  
+   <div class="fut-player-card" id="CB">
+      <i class="fa-regular fa-square-plus plus plus-one"></i>
+      <div class="player-card-top">
+         <div class="player-master-info">
+            <div class="player-rating">
+               <span></span>
+            </div>
+            <div class="player-position">
+               <span></span>
+            </div>
+            <div class="player-nation">
+               <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+            </div>
+            <div class="player-club">
+               <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+            </div>
+         </div>
+         <div class="player-picture">
+            <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+            <div class="player-extra">
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+      <div class="player-card-bottom">
+         <div class="player-info">
+            <!-- Player Name-->
+            <div class="player-name">
+               <span></span>
+            </div>
+            <!-- Player Features-->
+            <div class="player-features">
+               <div class="player-features-col">
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+               </div>
+               <div class="player-features-col">
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+  
+</div>
+    </section>
 
  <footer>
   <div class="footer-one">

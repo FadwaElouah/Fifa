@@ -195,13 +195,6 @@ grid-template-rows: repeat(6,1fr); */
     
 }
 /* ==============pos */
-.section-cards{
-   
-  /* visibility: hidden; */
-    
-  
-   
-}
 .card-card{
 
     display: none;
@@ -405,7 +398,7 @@ grid-template-rows: repeat(6,1fr); */
 
 /* Formulaine */
 
-.formulaire{
+#formulaire{
  width: 30%;
  background-color: rgb(27, 22, 22);
  height: 650px;
@@ -420,7 +413,7 @@ grid-template-rows: repeat(6,1fr); */
 
 }
 
-.formulaire button{
+#formulaire button{
     padding: 10px 20px;
     background-color: #2F9B75;
     border: none;
@@ -428,7 +421,7 @@ grid-template-rows: repeat(6,1fr); */
     margin-left: 1.5rem;
     margin-top: 2rem;
 }
-.formulaire button:hover{
+#formulaire button:hover{
     opacity: 0.5;
 }
 .name{
@@ -448,6 +441,13 @@ grid-template-rows: repeat(6,1fr); */
 .hidden{
     display:none;
 }
+/* ====disposition */
+.disposition-section{
+    background-color: #111;
+    display: flex;
+   padding: 2rem 0;
+}
+
 
 
 /* footer */
