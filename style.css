@@ -397,11 +397,25 @@ grid-template-rows: repeat(6,1fr); */
 }
 
 /* Formulaine */
-
+h1{
+    text-align: center;
+    color: #2F9B75;
+    padding-bottom: 15px;
+}
+#close{
+    color: #2F9B75;
+    font-size: 2rem;
+   position: absolute;
+   top: 0;
+   right:0;
+   padding: 10px 10px 0 0 ;
+}
+#close:hover{
+    opacity: 0.5;
+}
 #formulaire{
  width: 30%;
  background-color: rgb(27, 22, 22);
- height: 650px;
  padding-top: 25px;
  display: none;
  position: absolute;
@@ -420,6 +434,7 @@ grid-template-rows: repeat(6,1fr); */
     border-radius: 5px;
     margin-left: 1.5rem;
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 #formulaire button:hover{
     opacity: 0.5;

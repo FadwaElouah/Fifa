@@ -2,7 +2,7 @@ let plus = document.querySelectorAll(".plus")
 let formulaire = document.querySelector("#formulaire")
 let format = document.getElementById('format')
 let formation = document.querySelector('.formation')
-
+let close = document.getElementById('close')
 
 const CBGauche = document.getElementById("CB-gouch");
 const CBDroite = document.getElementById("CB-droit");
@@ -24,7 +24,9 @@ format.addEventListener('click',()=>{
     
 })
 
-
+close.addEventListener('click',()=>{
+   formulaire.style.display='none';
+})
 
 //  ==========Formulaire
 let taskName = document.getElementById('taskName')
