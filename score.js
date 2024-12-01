@@ -46,6 +46,7 @@ let taskAjouter = document.getElementById('taskAjouter')
 let taskModifier = document.getElementById('taskModifier')
 let taskSupprimer = document.getElementById('taskSupprimer')
 let gridOne = document.querySelectorAll('.grid-one')
+let selectedPlayerCard = null;
 
 
 formulaire.addEventListener('submit',(e)=>{
@@ -53,13 +54,13 @@ formulaire.addEventListener('submit',(e)=>{
     e.preventDefault();
     if(taskName .value != '' && taskNastionality.value != '' && taskRating.value != '' && taskPosition.value != '' && taskPace.value != '' && taskShooting.value != '' && taskPassing.value != '' && taskDrib.value != '' && taskDefen.value != '' && taskPhysical.value != '' && taskUrl.value != '' && taskClub.value != ''){
       gridOne[0].innerHTML =`
-        
+       
          <div class="fut-player-card" id="ST-gouch">
   
            <i class="fa-regular fa-square-plus plus" id="plus_icon" ></i>
-           <div class="player-card-top">
+            <div class="player-card-top">
               <div class="player-master-info">
-                <div class="player-rating">
+              <div class="player-rating">
                  <span>${taskRating.value}</span>
               </div> 
               
@@ -170,4 +171,28 @@ formationTwo.addEventListener('click',()=>{
     cardCard .style.display='none';
     sectionCard.style.visibility='visible'
 })
+
+
+
+// ==============Edit
+function editPlayer(button) {
+
+  selectedPlayerCard = button.closest('.fut-player-card');
+
+  taskName.value = selectedPlayerCard.querySelector('.player-name span').textContent;
+  taskNastionality.value = selectedPlayerCard.querySelector('.player-nation img').src;
+  taskClub.value = selectedPlayerCard.querySelector('.player-club img').src;
+  taskRating.value = selectedPlayerCard.querySelector('.player-rating span').textContent;
+  taskPosition.value = selectedPlayerCard.querySelector('.player-position span').textContent;
+  taskPace.value = selectedPlayerCard.querySelector('.player-feature-value:nth-child(1)').textContent;
+  taskShooting.value = selectedPlayerCard.querySelector('.player-feature-value:nth-child(2)').textContent;
+  taskPassing.value = selectedPlayerCard.querySelector('.player-feature-value:nth-child(3)').textContent;
+  taskDrib.value = selectedPlayerCard.querySelector('.player-feature-value:nth-child(4)').textContent;
+  taskDefen.value = selectedPlayerCard.querySelector('.player-feature-value:nth-child(5)').textContent;
+  taskPhysical.value = selectedPlayerCard.querySelector('.player-feature-value:nth-child(6)').textContent;
+  taskUrl.value = selectedPlayerCard.querySelector('.player-picture img').src;
+}
+
+
+
 
