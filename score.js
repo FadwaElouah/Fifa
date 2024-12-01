@@ -53,12 +53,13 @@ formulaire.addEventListener('submit',(e)=>{
     e.preventDefault();
     if(taskName .value != '' && taskNastionality.value != '' && taskRating.value != '' && taskPosition.value != '' && taskPace.value != '' && taskShooting.value != '' && taskPassing.value != '' && taskDrib.value != '' && taskDefen.value != '' && taskPhysical.value != '' && taskUrl.value != '' && taskClub.value != ''){
       gridOne[0].innerHTML =`
-        <div class="player-card-top">
-           <div class="fut-player-card" id="ST-gouch">
+        
+         <div class="fut-player-card" id="ST-gouch">
   
            <i class="fa-regular fa-square-plus plus" id="plus_icon" ></i>
-           <div class="player-master-info">
-              <div class="player-rating">
+           <div class="player-card-top">
+              <div class="player-master-info">
+                <div class="player-rating">
                  <span>${taskRating.value}</span>
               </div> 
               
@@ -169,6 +170,4 @@ formationTwo.addEventListener('click',()=>{
     cardCard .style.display='none';
     sectionCard.style.visibility='visible'
 })
-taskAjouter.addEventListener('click',()=>{
-   alert('hello')
-})
+
