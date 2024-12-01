@@ -195,4 +195,9 @@ function editPlayer(button) {
 
 
 
+// =======Delete
 
+function deletePlayer(button) {
+  let cardToDelete = button.closest('.fut-player-card');
+  cardToDelete.remove();
+}  
