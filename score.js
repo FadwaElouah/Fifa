@@ -106,7 +106,7 @@ formulaire.addEventListener('submit',(e)=>{
                       <div class="player-feature-value">${taskPhysical.value}</div>
                       <div class="player-feature-title">PHY</div>
                    </span>
-                            <button id="taskModifier" onclick="editPlayer('${id}')"><i class="fa-solid fa-pen-to-square"></button>
+                          
                 </div>
              </div>
           </div>
@@ -114,10 +114,18 @@ formulaire.addEventListener('submit',(e)=>{
      
 
 `
-let plus = document.querySelector('.plus');
-
-plus.style.display = 'none';
-
+plus.forEach((plus) => {
+   plus.addEventListener("click", (e) => {
+      plus.style.display ="none";
+      formulaire.style.display ="block";
+   });
+});
+close.addEventListener('click', () => {
+   formulaire.style.display = 'none';
+   plus.forEach((plus) => {
+      plus.style.display = "block";
+   });
+ });
 formulaire.style.display = 'none'
 
   taskRating.value = '';
