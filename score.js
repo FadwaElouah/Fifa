@@ -47,7 +47,7 @@ formulaire.addEventListener('submit',(e)=>{
  
           <i class="fa-regular fa-square-plus plus" id="plus_icon" ></i>
            <div class="player-card-top">
-           <p>hello</p>
+      
              <div class="player-master-info">
              <div class="player-rating">
                 <span>${taskRating.value}</span>
@@ -114,18 +114,11 @@ formulaire.addEventListener('submit',(e)=>{
      
 
 `
-plus.forEach((plus) => {
-   plus.addEventListener("click", (e) => {
-      plus.style.display ="none";
-      formulaire.style.display ="block";
-   });
-});
-close.addEventListener('click', () => {
-   formulaire.style.display = 'none';
-   plus.forEach((plus) => {
-      plus.style.display = "block";
-   });
- });
+let plusIcon = theCard.querySelector(".plus");
+         if (plusIcon) {
+            plusIcon.style.display = "none";
+         }
+
 formulaire.style.display = 'none'
 
   taskRating.value = '';
