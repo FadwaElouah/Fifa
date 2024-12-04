@@ -150,7 +150,7 @@ border-radius: 6px;
 
  .plus{
     font-size: 3.4rem;
-    margin-top: -9px;
+    margin-top: -2px;
     margin-left:3rem ;
     color: #e3b325;
  }
@@ -201,6 +201,7 @@ border-radius: 6px;
 }
  .pos-one{
     margin-left: 20.5rem;
+    
    
 }
 .pos-two{
@@ -221,18 +222,19 @@ border-radius: 6px;
 .pos-five{
     margin-top: 3rem;
     margin-left: -4rem;
+    
    
 }
 .pos-six{
-    /* margin-top: 3rem;
-    margin-left: -5rem; */
+    margin-top: -12rem;
+  margin-left: 17rem;
+  
   
     
 } 
 /*end pos =========== */
-.fut-player-card{
-    
-}
+
+
 
 .fut-player-card .player-card-top {
 	position: relative;
@@ -257,18 +259,20 @@ border-radius: 6px;
 .fut-player-card .player-card-top .player-master-info .player-rating {
 	font-size: 12px;
     margin-top: -42px;
+    margin-left: -10px;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-position {
 	font-size: 12px;
     margin-top: -20px;
+    margin-left: -10px;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-nation {
 	display: block;
 	width: 1rem;
 	height: 25px;
-	margin: -11px 0;
+	margin: -11px -10px;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-nation img {
@@ -282,6 +286,7 @@ border-radius: 6px;
 	display: block;
 	width: 1rem;
 	height: 40px;
+    margin-left: -10px;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-club img {
@@ -293,7 +298,7 @@ border-radius: 6px;
 
 .fut-player-card .player-card-top .player-picture {
 	width: 200px;
-	height: 200px;
+	height: 194px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -542,7 +547,17 @@ margin: 10px 0;
 .card{
     display: flex;
 }
-
+#taskSupprimer{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    color: #e3b325;
+}
+#taskSupprimer:hover{
+    opacity: 0.5;
+}
 /* =======media */
 
 

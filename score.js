@@ -34,6 +34,8 @@ const CBDroite = document.getElementById("CB-droit");
 function addPlayer(id){
    console.log(id)
    formulaire.style.display = 'block'
+   taskModifier.style.display = 'none';
+   taskSupprimer.style.display = 'none';
    let theCard = document.getElementById(id)
    console.log(theCard)
    
@@ -44,7 +46,8 @@ formulaire.addEventListener('submit',(e)=>{
       theCard.innerHTML =`
       
        
- 
+<button id="taskSupprimer" onclick="deleteTask('${id}')"><i class="fa-sharp fa-solid fa-trash"></i></button>
+
           <i class="fa-regular fa-square-plus plus" id="plus_icon" ></i>
            <div class="player-card-top">
       
@@ -111,8 +114,6 @@ formulaire.addEventListener('submit',(e)=>{
              </div>
           </div>
        </div>
-     
-
 `
 let plusIcon = theCard.querySelector(".plus");
          if (plusIcon) {
@@ -120,6 +121,7 @@ let plusIcon = theCard.querySelector(".plus");
          }
 
 formulaire.style.display = 'none'
+
 
   taskRating.value = '';
   taskPosition.value = '';
@@ -134,6 +136,7 @@ formulaire.style.display = 'none'
   taskPassing.value = '';
   taskClub.value = '';
   
+
 
 }
 else {
@@ -184,40 +187,22 @@ formationTwo.addEventListener('click',()=>{
 })
 
 
-
-// ==============Edit
-
-
-function editPlayer(button) {
-   console.log(button)
-   
-let selectedPlayerCard = document.getElementById(`${button}`)
-console.log()
-//   selectedPlayerCard = button.closest('.fut-player-card');
-formulaire.style.display = "block"
-let Postion = selectedPlayerCard.children[1].children[1].children[1].textContent.trim();
-console.log(Postion)
-
-
-// document.getElementById("taskPosition").value = Postion
- qdocument.querySelector('.player-nation img').src =
-//   taskClub.value = querySelector('.player-club img').src;
-//   taskRating.value = querySelector('.player-rating span').textContent;
-  document.getElementById("taskPosition").value = Postion
-//   taskPace.value = querySelector('.player-feature-value:nth-child(1)').textContent;
-//   taskShooting.value = querySelector('.player-feature-value:nth-child(2)').textContent;
-//   taskPassing.value = querySelector('.player-feature-value:nth-child(3)').textContent;
-//   taskDrib.value = querySelector('.player-feature-value:nth-child(4)').textContent;
-//   taskDefen.value = querySelector('.player-feature-value:nth-child(5)').textContent;
-//   taskPhysical.value = querySelector('.player-feature-value:nth-child(6)').textContent;
-//   taskUrl.value = querySelector('.player-picture img').src;
-}
-
-
-
 // =======Delete
 
-function deletePlayer(button) {
-  let cardToDelete = button.closest('.fut-player-card');
-  cardToDelete.remove();
-}  
+// function deletePlayer() {
+// //   let cardToDelete = button.closest('.fut-player-card');
+// let playerImg = document.querySelector('.player-card-top')
+// let playerClub = document.querySelector('.player-card-bottom')
+
+// playerImg.remove();
+// playerClub.remove();
+// }  
+// Delete Player Function
+function deleteTask(cardId) {
+   let card = document.getElementById(cardId);
+   if (card) {
+      card.innerHTML = '';
+       
+   }
+}
+
