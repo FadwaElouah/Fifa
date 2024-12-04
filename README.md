@@ -25,7 +25,8 @@ L'application s’adapte dynamiquement à différentes tailles d'écrans :
 Desktop : Vue étendue et riche en informations avec une disposition optimale pour une utilisation sur grand écran.
 Smartphone  : Interface simplifiée pour un affichage optimal sur des écrans plus petits, avec des interactions tactiles fluides.
 
-![Screenshot 2024-12-04 054546](https://github.com/user-attachments/assets/acedfdca-fe13-4917-94fd-dbac326a6cd9)
+![Screenshot 2024-12-04 054546](https://github.com/user-attachments/assets/38ec27c8-abb0-43fb-99fa-3ca70d83efd5)
+
 
 Technologies Utilisées
 HTML : Structure de la page et des éléments interactifs.
